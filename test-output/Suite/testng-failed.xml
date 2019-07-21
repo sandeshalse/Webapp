@@ -1,13 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [Suite]">
+  <parameter name="Browser" value="Browserstack_Windows_ie"/>
   <test name="Test(failed)">
     <classes>
-      <class name="com.webapp.Actions.Testapp">
+      <class name="com.webapp.testcases.HomePageTest">
         <methods>
-          <include name="test"/>
+          <include name="verifymenuitems"/>
+          <include name="afterclass"/>
+          <include name="navigatetoFraudPreventionPageTest"/>
+          <include name="beforeclass"/>
         </methods>
-      </class> <!-- com.webapp.Actions.Testapp -->
+      </class> <!-- com.webapp.testcases.HomePageTest -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

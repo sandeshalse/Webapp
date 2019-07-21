@@ -1,11 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Suite">
+
+<!-- <parameter name="Browser" value="chrome"></parameter> -->
+<!-- <parameter name="Browser" value="firefox"></parameter> -->
+<!-- <parameter name="Browser" value="ie"></parameter> -->
+<!-- <parameter name="Browser" value="headless"></parameter> -->
+<!-- <parameter name="Browser" value="Browserstack_Windows_chrome"></parameter> -->
+<parameter name="Browser" value="Browserstack_Windows_ie"></parameter>
+<!-- <parameter name="Browser" value="Browserstack_OSX_safari"></parameter> -->
+
   <test thread-count="5" name="Test">
     <classes>
-      <class name="com.webapp.Actions.Testapp"/>
+      <class name="com.webapp.testcases.HomePageTest"/>
       <methods>
-      <method name="test"></method></methods>
+      <method name="CurrencyConvertion"></method>
+      <method name="verifymenuitems"></method></methods>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

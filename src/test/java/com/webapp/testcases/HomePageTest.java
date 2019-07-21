@@ -41,11 +41,11 @@ public class HomePageTest extends ApplicationBase
 		sa.assertTrue(hp.MarketAnalysisLinkisDisplayed(),"Market Analysis link is displayed in the menu");
 		sa.assertTrue(hp.CurrencyEncyclopediaLinkisDisplayed(),"Currency Encyclopedia link is displayed in the menu");
 		sa.assertTrue(hp.FraudPreventionLinkisDisplayed(),"Fraud Prevention link is displayed in the menu");
-		sa.assertTrue(hp.BacktoMoneyTransferandCurrencyTipspagebuttonisDisplayed(),"");	
 	}
 	@Test
 	public void navigatetoFraudPreventionPageTest()
 	{
+		hp.ClickOnResourcesmenu();
 		hp.ClickOnFraudPreventionLink();
 		sa.assertTrue(hp.BacktoMoneyTransferandCurrencyTipspagebuttonisDisplayed(),"Back to Money Transfer & Currency Tips page");	
 		hp.ClickOnBacktoMoneyTransferandCurrencyTipspagebutton();		
